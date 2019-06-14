@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
+
+/* Cores */
+
+.bg-cinza-claro {
+    background: rgba(242, 242, 242, 0.5);
+}
+
+.bg-cinza {
+    background: rgba(242, 242, 242, 0.4);
+}
+
+.bg-cinza-ativo {
+    background: #EAEAEA;
+}
+
+.bg-cinza-escuro {
+    background: #5A5A5A;
+}
+
+.bg-azul-claro {
+    background: rgba(25, 108, 189, 0.4);
+}
+
+.bg-azul-escuro {
+    background: #196CBD;
+}
+
+/* Fontes */
+
+.fonte-dez {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.fonte-doze {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.fonte-catorze {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.fonte-dezesseis {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/* Geral */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulos_internas {
+    color: #42474A;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+    .mb-xs-4 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .mb-xs-5 {
+        margin-bottom: 3rem !important;
+    }
+
+    .text-xs-center {
+        text-align: center;
+    }
+
+    .mw-20 {
+        margin-right: 0 !important;
+        max-width: 100% !important;
+    }
+}
+
+/* Areas Menu */
+
+.areas-menu .bg-cinza-ativo .card-body {
+    color: #196CBD;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    .menu-completo {
+        left: 50%;
+        margin-left: -50vw;
+        position: relative;
+        width: 100vw;
+    }
+}
+
+/* Noticias */
+
+.noticias .card-img-overlay {
+    top: auto;
+}
+
+/* Rodapé */
+
+.area-rodape .form-group .rounded-pill {
+    border-radius: 10px !important;
+}
+
+/* Calendário Agenda */
+
+.calendario-agenda-sec {
+    margin: 0;
+    max-width: 475px;
+    padding: 0;
+}
+
+.ic__container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
+.ic__container {
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    height: auto;
+}
+
+.ic__container .ic__header {
+    border-bottom: 1px solid #DEE2E6;
+}
+
+.ic__container .ic__header .ic__year .ic__year-select {
+    background: #FFF;
+    border: 0 none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #196CBD;
+    font-size: 18px;
+    font-weight: bold;
+    height: 45px;
+    padding: 0.5rem;
+    text-align-last: center;
+    width: 100%;
+}
+
+.ic__container .ic__header .ic__month .ic__month-select {
+    background: #196CBD;
+    border: 0 none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    height: 45px;
+    padding: 0.5rem;
+    text-align-last: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.ic__week-head {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.ic__week-head tr td {
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.ic__days {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ic__days tbody tr td {
+    border: 1px solid #C4C4C4;
+    cursor: pointer;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 70px;
+}
+
+.ic__days tbody tr td.ic__day-empty {
+    cursor: default;
+}
+
+.ic__days tbody:last-child td {
+    border-bottom: 0;
+}
+
+.ic__days tbody tr td:first-child {
+    border-left: 0;
+}
+
+.ic__days tbody tr td:last-child {
+    border-right: 0;
+}
+
+.ic__days tr:last-child td:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+.ic__days tr:last-child td:last-child {
+    border-bottom-right-radius: 4px;
+}
+
+.ic__days tbody tr td.ic__day-empty {
+    background: #F2F2F2;
+}
+
+.data_agenda {
+    color: #196CBD;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.agenda {
+    font-size: 16px;
+}
+
+.agenda .horario {
+    color: #196CBD;
+    font-weight: bold;
+}
+
+.agenda .evento {
+    color: #000;
+}
+
+.agenda .local {
+    color: #5A5A5A;
+}
+
+/* Participação Social */
+
+.mw-20 {
+    max-width: 20%;
+}
