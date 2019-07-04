@@ -1,0 +1,16 @@
+{
+  "name": "portal-sme",
+  "version": "1.0.0",
+  "description": "Front-end do Portal SME",
+  "main": "index.js",
+  "repository": "https://github.com/prefeiturasp/SME-Portal-Institucional-Front.git",
+  "author": "Flávio Ricardo <flavioricardo@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "node server.js"
+  },
+  "dependencies": {
+    "connect": "^3.7.0",
+    "serve-static": "^1.14.1"
+  }
+}
