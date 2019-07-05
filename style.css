@@ -10,12 +10,24 @@
     background: rgba(242, 242, 242, 0.4);
 }
 
+.bg-cinza-claro-organo {
+    background: #D1D1D1;
+}
+
+.bg-cinza-escuro-organo {
+    background: #828282;
+}
+
 .bg-cinza-ativo {
     background: #EAEAEA;
 }
 
 .bg-cinza-escuro {
     background: #5A5A5A;
+}
+
+.bg-azul-organo {
+    background: #4F96CD;
 }
 
 .bg-azul-claro {
@@ -79,6 +91,14 @@ body {
     .mw-20 {
         margin-right: 0 !important;
         max-width: 100% !important;
+    }
+
+    .borda-itens::before {
+        display: none;
+    }
+
+    .borda-itens::after {
+        display: none;
     }
 }
 
@@ -244,4 +264,65 @@ body {
 
 .mw-20 {
     max-width: 20%;
+}
+
+/* Organograma */
+
+.borda-itens::after {
+    background: red;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    transform: rotate(90deg) translateX(-47px);
+    width: 20px;
+}
+
+.borda-itens.borda-azul-organo:after {
+    background: #4F96CD;
+}
+
+.borda-itens.borda-cinza-claro-organo:after {
+    background: #D1D1D1;
+}
+
+.borda-itens::before {
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    transform: translateY(-38px);
+    width: 77.8%;
+}
+
+.borda-itens.borda-azul-organo:before {
+    background: #4F96CD;
+}
+
+.borda-itens.borda-cinza-claro-organo:before {
+    background: #D1D1D1;
+}
+
+.borda-conexao::before {
+    align-self: center;
+    content: "";
+    display: flex;
+    height: 2px;
+    position: absolute;
+    transform: rotate(90deg) translateX(-20px);
+    width: 20%;
+}
+
+.borda-conexao.bg-azul-organo::before {
+    background: #4F96CD;
+}
+
+.borda-conexao.bg-cinza-claro-organo::before {
+    background: #D1D1D1;
 }

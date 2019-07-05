@@ -17,3 +17,13 @@ if (url[url.length - 1] === 'agenda-secretario.html') {
         }
     });
 }
+
+$('.borda-conexao').each(function (i, borda) {
+    $(borda).parent().addClass(`borda-itens ${filterItems($(borda).attr('class').split(' '), 'bg').replace('bg', 'borda')}`);
+});
+
+function filterItems(elementos, termo) {
+    return elementos.filter(function (el) {
+        return el.toLowerCase().indexOf(termo.toLowerCase()) > -1;
+    }).toString();
+}
