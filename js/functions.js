@@ -18,8 +18,20 @@ if (url[url.length - 1] === 'agenda-secretario.html') {
     });
 }
 
+// Organograma
+
+jQuery.extend(jQuery.expr[':'], {
+    before: function (el, index, match) {
+        return $(el).is('h2');
+    }
+});
+
 $('.borda-conexao').each(function (i, borda) {
     $(borda).parent().addClass(`borda-itens ${filterItems($(borda).attr('class').split(' '), 'bg').replace('bg', 'borda')}`);
+});
+
+$('.item-coord').each(function (i, coord) {
+    // $(coord).children(':not(:nth-child(2))').removeClass('borda-itens');
 });
 
 function filterItems(elementos, termo) {
