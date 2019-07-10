@@ -268,41 +268,76 @@ body {
 
 /* Organograma */
 
-.item-coord h2 a::after {
+.lista-coordenadorias .coordenadoria .card-header::before,
+.lista-dres .card-header.bg-cinza-escuro-organo::before {
+    background: #D1D1D1;
+    content: '';
+    height: 2px;
+    left: 0;
+    margin-left: auto;
+    position: absolute;
+    top: 25px;
+    transform: translateX(-100%);
+    width: 10%;
+}
+
+.lista-coordenadorias .coordenadoria:first-child .card-header::after {
+    border-left: 2px solid #D1D1D1;
+    content: '';
+    height: 50vmax;
+    left: 0;
+    margin-left: auto;
+    position: absolute;
+    top: 0;
+    transform: translateX(-85px) translateY(25px);
+    z-index: -1;
+    width: 100%;
+}
+
+.lista-dres .card-header.bg-cinza-escuro-organo::after {
+    border-left: 2px solid #D1D1D1;
+    bottom: 0;
+    content: '';
+    height: 50vmax;
+    left: 0;
+    margin-left: auto;
+    position: absolute;
+    transform: translateX(-85px) translateY(-30px);
+    z-index: -1;
+    width: 100%;
+}
+
+.card-header h2 a::after {
     content: "\279E";
     position: absolute;
     transform: rotate(90deg) translateY(-5px);
 }
 
-.item-coord h2 a[aria-expanded=true]::after {
+.card-header h2 a[aria-expanded=true]::after {
     transform: rotate(-90deg) translateY(5px);
 }
 
-.borda-itens {
-    justify-content: center;
-}
-
 .borda-itens .card {
-    max-width: 25%;
+    max-width: 13.3em;
 }
 
 .borda-itens .card::before,
 .borda-itens .card::after {
     content: '';
-    height: 20px;
+    height: 35px;
     position: absolute;
     right: 50%;
-    transform: translateY(-20px);
+    transform: translateY(-100%);
     width: 100%;
 }
 
-.borda-itens.borda-azul-organo .card::before,
-.borda-itens.borda-azul-organo .card::after {
+.borda-itens:nth-child(-n+2).borda-azul-organo .card::before,
+.borda-itens:nth-child(-n+2).borda-azul-organo .card::after {
     border-top: 2px solid #4F96CD;
 }
 
-.borda-itens.borda-cinza-claro-organo .card::before,
-.borda-itens.borda-cinza-claro-organo .card::after {
+.borda-itens:nth-child(-n+2).borda-cinza-claro-organo .card::before,
+.borda-itens:nth-child(-n+2).borda-cinza-claro-organo .card::after {
     border-top: 2px solid #D1D1D1;
 }
 
@@ -319,16 +354,11 @@ body {
     border-left: 2px solid #D1D1D1;
 }
 
-.borda-itens .card:only-child::before,
-.borda-itens .card:only-child::after {
-    display: none;
+.borda-itens:nth-child(-n+2) .card:first-child::before,
+.borda-itens:nth-child(-n+2) .card:last-child::after {
+    border: 0 none;
 }
 
-.borda-itens .card:only-child {
-    padding-top: 0;
-}
-
-.borda-itens .card:first-child::before,
 .borda-itens .card:last-child::after {
     border: 0 none;
 }
@@ -341,7 +371,7 @@ body {
     border-right: 2px solid #D1D1D1;
 }
 
-.borda-itens::before {
+.borda-itens:nth-child(-n+2)::before {
     content: "";
     height: 2px;
     left: 0;
@@ -349,14 +379,14 @@ body {
     margin-right: auto;
     position: absolute;
     right: 0;
-    transform: rotate(90deg) translateX(-38px);
-    width: 35px;
+    transform: rotate(90deg) translateX(-210%);
+    width: 22px;
 }
 
-.borda-itens.borda-azul-organo::before {
+.borda-itens:nth-child(-n+2).borda-azul-organo::before {
     background: #4F96CD;
 }
 
-.borda-itens.borda-cinza-claro-organo::before {
+.borda-itens:nth-child(-n+2).borda-cinza-claro-organo::before {
     background: #D1D1D1;
 }
