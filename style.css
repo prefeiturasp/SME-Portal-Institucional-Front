@@ -268,56 +268,57 @@ body {
 
 /* Organograma */
 
-.lista-coordenadorias .coordenadoria .card-header::before,
-.lista-dres .card-header.bg-cinza-escuro-organo::before {
-    background: #D1D1D1;
-    content: '';
-    height: 2px;
-    left: 0;
-    margin-left: auto;
-    position: absolute;
-    top: 25px;
-    transform: translateX(-100%);
-    width: 10%;
-}
-
-.lista-coordenadorias .coordenadoria:first-child .card-header::after {
+.lista-coordenadorias .coordenadoria::before,
+.lista-dres .dres::before {
+    border-top: 2px solid #D1D1D1;
     border-left: 2px solid #D1D1D1;
     content: '';
-    height: 50vmax;
+    height: 100%;
     left: 0;
-    margin-left: auto;
     position: absolute;
     top: 0;
-    transform: translateX(-85px) translateY(25px);
+    transform: translateX(-100%) translateY(25px);
     z-index: -1;
-    width: 100%;
+    width: 85px;
 }
 
-.lista-dres .card-header.bg-cinza-escuro-organo::after {
+.lista-dres .dres::before {
+    border-left: 0 none;
+}
+
+.lista-coordenadorias .coordenadoria::after,
+.lista-dres .dres::after {
     border-left: 2px solid #D1D1D1;
-    bottom: 0;
     content: '';
-    height: 50vmax;
+    height: 100%;
     left: 0;
-    margin-left: auto;
     position: absolute;
-    transform: translateX(-85px) translateY(-30px);
+    top: -50%;
+    transform: translateX(-100%) translateY(25px);
     z-index: -1;
-    width: 100%;
+    width: 85px;
+}
+
+.lista-coordenadorias .coordenadoria:first-child::after {
+    border: 0 none;
+}
+
+.lista-dres .dres::after {
+    top: -100%;
 }
 
 .card-header h2 a::after {
-    content: "\279E";
-    position: absolute;
-    transform: rotate(90deg) translateY(-5px);
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    transform: translateX(5px);
 }
 
 .card-header h2 a[aria-expanded=true]::after {
-    transform: rotate(-90deg) translateY(5px);
+    content: "\f106";
 }
 
 .borda-itens .card {
+    min-height: 6.5em;
     max-width: 13.3em;
 }
 
