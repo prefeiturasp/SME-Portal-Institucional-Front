@@ -18,6 +18,10 @@
     background: #828282;
 }
 
+.bg-cinza-dre {
+    background: #F2F2F2;
+}
+
 .bg-cinza-ativo {
     background: #EAEAEA;
 }
@@ -268,43 +272,46 @@ body {
 
 /* Organograma */
 
-.lista-coordenadorias .coordenadoria::before,
-.lista-dres .dres::before {
-    border-top: 2px solid #D1D1D1;
-    border-left: 2px solid #D1D1D1;
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: translateX(-100%) translateY(25px);
-    z-index: -1;
-    width: 85px;
-}
+@media (min-width: 768px) {
 
-.lista-dres .dres::before {
-    border-left: 0 none;
-}
+    .lista-coordenadorias .coordenadoria::before,
+    .lista-dres .dres::before {
+        border-top: 2px solid #D1D1D1;
+        border-left: 2px solid #D1D1D1;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translateX(-100%) translateY(25px);
+        z-index: -1;
+        width: 85px;
+    }
 
-.lista-coordenadorias .coordenadoria::after,
-.lista-dres .dres::after {
-    border-left: 2px solid #D1D1D1;
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: -50%;
-    transform: translateX(-100%) translateY(25px);
-    z-index: -1;
-    width: 85px;
-}
+    .lista-dres .dres::before {
+        border-left: 0 none;
+    }
 
-.lista-coordenadorias .coordenadoria:first-child::after {
-    border: 0 none;
-}
+    .lista-coordenadorias .coordenadoria::after,
+    .lista-dres .dres::after {
+        border-left: 2px solid #D1D1D1;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: -50%;
+        transform: translateX(-100%) translateY(25px);
+        z-index: -1;
+        width: 85px;
+    }
 
-.lista-dres .dres::after {
-    top: -100%;
+    .lista-coordenadorias .coordenadoria:first-child::after {
+        border: 0 none;
+    }
+
+    .lista-dres .dres::after {
+        top: -100%;
+    }
 }
 
 .card-header h2 a::after {
