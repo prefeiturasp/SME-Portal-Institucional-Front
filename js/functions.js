@@ -31,8 +31,17 @@ $('.coordenadoria').each(function (i, coord) {
     }
 });
 
+if (url[url.length - 1] === 'organograma.html') {
+    if (isMobile()) window.location.href = "organograma-mobile.html";
+}
+
 function filterItems(elementos, termo) {
     return elementos.filter(function (el) {
         return el.toLowerCase().indexOf(termo.toLowerCase()) > -1;
     }).toString();
+}
+
+function isMobile() {
+    try { document.createEvent("TouchEvent"); return true; }
+    catch (e) { return false; }
 }
