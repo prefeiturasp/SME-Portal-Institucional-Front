@@ -46,6 +46,10 @@
     border: 1px solid #DADADA;
 }
 
+.cor-azul {
+    color: #196CBD;
+}
+
 /* Fontes */
 
 .fonte-dez {
@@ -66,6 +70,11 @@
 .fonte-dezesseis {
     font-size: 16px;
     line-height: 18px;
+}
+
+.fonte-dezoito {
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .fonte-vintequatro {
@@ -260,11 +269,6 @@ body {
     font-size: 16px;
 }
 
-.agenda .horario {
-    color: #196CBD;
-    font-weight: bold;
-}
-
 .agenda .evento {
     color: #000;
 }
@@ -442,12 +446,14 @@ body {
     max-height: 420px;
 }
 
-.top-auto {
-    top: auto;
-}
+@media (min-width: 768px) {
+    .top-auto {
+        top: auto;
+    }
 
-.bottom-0 {
-    bottom: 0;
+    .bottom-0 {
+        bottom: 0;
+    }
 }
 
 .bloco-noticias .card-columns {
@@ -458,6 +464,7 @@ body {
     max-height: 235px;
 }
 
-.bloco-noticias a {
-    color: #196CBD;
+.programas-projetos .rounded-circle {
+    height: 45px;
+    width: 45px;
 }
