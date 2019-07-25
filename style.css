@@ -68,6 +68,11 @@
     line-height: 18px;
 }
 
+.fonte-vintequatro {
+    font-size: 24px;
+    line-height: 26px;
+}
+
 /* Geral */
 
 body {
@@ -401,4 +406,58 @@ body {
 
 .borda-itens:nth-child(-n+2).borda-cinza-claro-organo::before {
     background: #D1D1D1;
+}
+
+/* Mais notícias */
+
+.categorias-nav ul li:nth-child(1) {
+    border-bottom: 4px solid #109CF1;
+}
+
+.categorias-nav ul li:nth-child(2) {
+    border-bottom: 4px solid #35B95A;
+}
+
+.categorias-nav ul li:nth-child(3) {
+    border-bottom: 4px solid #F18A10;
+}
+
+.categorias-nav ul li:nth-child(4) {
+    border-bottom: 4px solid #E483BE;
+}
+
+.categorias-nav ul li:nth-child(5) {
+    border-bottom: 4px solid #F1C010;
+}
+
+.categorias-nav ul li:nth-child(6) {
+    border-bottom: 4px solid #9B5DCC;
+}
+
+.categorias-nav ul li:nth-child(7) {
+    border-bottom: 4px solid #47D3CB;
+}
+
+.noticias-slider img {
+    max-height: 420px;
+}
+
+.top-auto {
+    top: auto;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.bloco-noticias .card-columns {
+    column-count: 2;
+}
+
+.bloco-noticias img {
+    max-height: 235px;
+}
+
+.bloco-noticias a {
+    color: #196CBD;
 }
